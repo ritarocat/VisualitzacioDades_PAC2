@@ -309,9 +309,9 @@ class MoviesVisualizations:
         return fig
 
 def main():
-    dataset_path = r"C:\Users\rocar\OneDrive - HP Inc\UOC_rita\Q3\Q3_VisualitzacioDades\PAC2\title.basics.tsv"
-    ratings_path = r"C:\Users\rocar\OneDrive - HP Inc\UOC_rita\Q3\Q3_VisualitzacioDades\PAC2\title.ratings.tsv"
-    worldbank_path = r"C:\Users\rocar\OneDrive - HP Inc\UOC_rita\Q3\Q3_VisualitzacioDades\PAC2\WorldBank_2023.csv"
+    dataset_path = r"src\title.basics.tsv"
+    ratings_path = r"src\title.ratings.tsv"
+    worldbank_path = r"src\WorldBank_2023.csv"
     
     moviesVisualizations = MoviesVisualizations(dataset_path, ratings_path, worldbank_path)
 
@@ -355,4 +355,5 @@ def main():
     print(f"Bullet graph desat a: {bullet_html_path}")
 
 if __name__ == "__main__":
+
     main()
